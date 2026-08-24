@@ -14,7 +14,7 @@ Built with **Three.js** and **MediaPipe Hand Landmarker**, running entirely in t
 [![Hand Tracking Core Demo](./assets/preview.gif)](https://esvius.github.io/hand-tracking-orb/)
 
 
-[![Live Demo](https://img.shields.io/badge/🔴_Live_Demo-esvius.github.io-black?style=for-the-badge)](https://esvius.github.io/hand-tracking-orb/)
+[![Live Demo](https://img.shields.io/badge/🟢_Live-esvius.github.io-black?style=for-the-badge)](https://esvius.github.io/hand-tracking-orb/)
 
 </div>
 
