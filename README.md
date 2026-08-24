@@ -40,14 +40,14 @@ The experience features animated orbital rings, holographic wireframes, glowing 
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/hand-tracking-core.git
+git clone https://github.com/esvius/hand-tracking-core.git
 cd hand-tracking-core
 ```
 
 Run it using a local server:
 
 ```bash
-npx serve
+npx server
 ```
 
 Then open the local URL provided by the server.
