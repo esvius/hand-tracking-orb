@@ -35,25 +35,6 @@ The experience features animated orbital rings, holographic wireframes, glowing 
 - **WebGL**
 - **HTML5 / CSS3 / JavaScript**
 
-## 📦 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/esvius/hand-tracking-core.git
-cd hand-tracking-core
-```
-
-Run it using a local server:
-
-```bash
-npx server
-```
-
-Then open the local URL provided by the server.
-
-> Camera permission is required for hand tracking.
-
 ## 📱 Browser Support
 
 Works best on modern browsers with support for:
@@ -73,7 +54,6 @@ Recommended: **Chrome, Edge, Firefox, or Safari**.
 - [ ] Mouse and touch controls
 - [ ] Gesture calibration
 - [ ] Visual themes
-- [ ] Screenshot and recording support
 - [ ] Modular project structure
 
 ## 📄 License
