@@ -2,17 +2,16 @@
 
 # 🌌 Hand Tracking Core
 
-**A real-time, gesture-controlled 3D orb rendered in WebGL.**
-**No mouse, no keyboard, just your hands.**
+**A real-time, gesture-controlled 3D orb rendered in WebGL.No mouse, no keyboard, just your hands.**
 
-Built with **Three.js** and **MediaPipe Hand Landmarker**, running entirely in the browser at 60fps.
+Built with **Three.js** and **MediaPipe Hand Landmarker**, running entirely in the browser.
 
 [![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat&logo=three.js&logoColor=white)](https://threejs.org/)
 [![MediaPipe](https://img.shields.io/badge/MediaPipe-Hand%20Landmarker-4285F4?style=flat&logo=google&logoColor=white)](https://developers.google.com/mediapipe)
 [![WebGL](https://img.shields.io/badge/WebGL2-990000?style=flat&logo=webgl&logoColor=white)](https://www.khronos.org/webgl/)
 [![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](#-license)
 
-![Hand Tracking Core Demo](./assets/preview.gif)
+![Hand Tracking Core Preview](./assets/preview.gif)
 
 </div>
 
