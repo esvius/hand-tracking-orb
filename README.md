@@ -23,16 +23,6 @@ Built with **Three.js** and **MediaPipe Hand Landmarker**, running entirely in t
 
 No motion sensors, no external hardware. Just a browser and a camera.
 
-## ✨ Highlights
-
-| | |
-|---|---|
-| 🖐️ **Gesture-native UI** | Every interaction — rotate, zoom, dive — is driven by hand landmarks, not clicks |
-| 🎨 **Layered visual design** | Orbiting rings, dual icosahedron shells, a Fibonacci-sphere particle network, ambient dust, and light-flare sprites composited into one cohesive scene |
-| 🌟 **Cinematic rendering** | Unreal Bloom + chromatic aberration post-processing for a polished, atmospheric look |
-| ⚡ **Runs anywhere** | Pure ES modules, no build step, no bundler — clone and serve |
-| 📱 **Adaptive performance** | Geometry detail, particle counts, and pixel ratio auto-scale for mobile vs. desktop GPUs |
-
 ## 🎮 Controls
 
 | Gesture | Action |
@@ -71,7 +61,7 @@ npx serve .
 python -m http.server 3000
 ```
 
-Then open `http://localhost:3000`, grant camera permission, and start moving your hands. 🖐️
+Then open `http://localhost:3000`, grant camera permission, and start moving your hands.
 
 ## 📋 Requirements
 
@@ -87,7 +77,7 @@ Then open `http://localhost:3000`, grant camera permission, and start moving you
 
 ## 🤝 Contributing
 
-This is a personal, closed-source project — external contributions and pull requests are not currently accepted.
+This is a personal, closed-source project external contributions and pull requests are not currently accepted.
 
 ## 📄 License
 
