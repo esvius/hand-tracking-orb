@@ -1,26 +1,60 @@
-# Hand Tracking Core
+<div align="center">
 
-A real-time, gesture-controlled 3D visualization built with **Three.js** and **MediaPipe Hand Landmarker**. Control a glowing wireframe orb — complete with orbiting particles, a network shell, and bloom-lit core — using nothing but your webcam and your hands.
+# 🌌 Hand Tracking Core
 
-## 🎥 Preview
+**A real-time, gesture-controlled 3D orb rendered in WebGL — no mouse, no keyboard, just your hands.**
+
+Built with **Three.js** and **MediaPipe Hand Landmarker**, running entirely in the browser at 60fps.
+
+[![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat&logo=three.js&logoColor=white)](https://threejs.org/)
+[![MediaPipe](https://img.shields.io/badge/MediaPipe-Hand%20Landmarker-4285F4?style=flat&logo=google&logoColor=white)](https://developers.google.com/mediapipe)
+[![WebGL](https://img.shields.io/badge/WebGL2-990000?style=flat&logo=webgl&logoColor=white)](https://www.khronos.org/webgl/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#-license)
 
 ![Hand Tracking Core Demo](./assets/preview.gif)
 
-## ✨ Features
+</div>
 
-- **Hand-tracked interaction** — no mouse or keyboard required
-  - 🤏 **Pinch (one hand)** → rotate the orb
-  - 🤏🤏 **Pinch (two hands)** → zoom in/out
-  - ✊ **Fist** → dive into the core and reveal an inner structure
-- **Layered 3D scene** — orbiting rings with electrons, icosahedron wireframes, a procedural point-network "shell," dust fields, and light-flare sprites
-- **Post-processing pipeline** — Unreal bloom + chromatic aberration (desktop) for a cinematic glow
-- **Adaptive performance** — automatically scales geometry detail, particle counts, and pixel ratio for mobile vs. desktop
+---
+
+## Overview
+
+**Hand Tracking Core** turns your webcam into a controller. A glowing, multi-layered orb — orbiting electron rings, nested icosahedron wireframes, a procedural point-cloud network shell, and a bloom-lit core — responds live to your hand gestures, tracked entirely client-side with zero backend and zero installs.
+
+No motion sensors, no external hardware. Just a browser and a camera.
+
+## ✨ Highlights
+
+| | |
+|---|---|
+| 🖐️ **Gesture-native UI** | Every interaction — rotate, zoom, dive — is driven by hand landmarks, not clicks |
+| 🎨 **Layered visual design** | Orbiting rings, dual icosahedron shells, a Fibonacci-sphere particle network, ambient dust, and light-flare sprites composited into one cohesive scene |
+| 🌟 **Cinematic rendering** | Unreal Bloom + chromatic aberration post-processing for a polished, atmospheric look |
+| ⚡ **Runs anywhere** | Pure ES modules, no build step, no bundler — clone and serve |
+| 📱 **Adaptive performance** | Geometry detail, particle counts, and pixel ratio auto-scale for mobile vs. desktop GPUs |
+
+## 🎮 Controls
+
+| Gesture | Action |
+|---|---|
+| 🤏 Pinch with **one hand** | Rotate the orb |
+| 🤏🤏 Pinch with **both hands** | Zoom in / out |
+| ✊ **Make a fist** | Dive into the core and reveal its inner structure |
+
+All gesture states use enter/exit thresholds (hysteresis) to stay stable and jitter-free, so tracking noise doesn't cause flickering between states.
+
+## 🧠 How It Works
+
+1. **MediaPipe Hand Landmarker** streams 21 3D landmarks per hand from the webcam feed, GPU-accelerated and running fully in-browser.
+2. Landmark geometry is analyzed each frame to classify **pinch** and **fist** states independently per hand.
+3. Recognized gestures drive target rotation, zoom, and camera-dive values, which are then smoothly interpolated (lerped) into the **Three.js** scene each render tick — so motion always feels fluid, never snapped.
+4. The scene itself is composed of independently animated layers (orbit rings, wireframe shells, particle network, dust) rendered through an `EffectComposer` pipeline for bloom and color-fringing.
 
 ## 🛠️ Tech Stack
 
-- [Three.js](https://threejs.org/) — WebGL scene, rendering, and post-processing
-- [MediaPipe Hand Landmarker](https://developers.google.com/mediapipe) — real-time hand landmark detection (GPU-accelerated, runs fully in-browser)
-- Vanilla JS / ES modules — no build step required
+- **[Three.js](https://threejs.org/)** — scene graph, WebGL rendering, post-processing (`EffectComposer`, `UnrealBloomPass`, custom chromatic aberration shader)
+- **[MediaPipe Hand Landmarker](https://developers.google.com/mediapipe)** — real-time, GPU-accelerated hand landmark detection
+- **Vanilla JS / ES Modules** — no framework, no bundler, no build step
 
 ## 🚀 Getting Started
 
@@ -29,7 +63,7 @@ git clone https://github.com/esvius/hand-tracking-orb.git
 cd hand-tracking-orb
 ```
 
-Serve the folder with any static server (camera access requires a secure context):
+Camera access requires a secure context, so serve the folder rather than opening the file directly:
 
 ```bash
 npx serve .
@@ -37,14 +71,32 @@ npx serve .
 python -m http.server 3000
 ```
 
-Open `http://localhost:3000`, grant camera permission, and start moving your hands. 🖐️
+Then open `http://localhost:3000`, grant camera permission, and start moving your hands. 🖐️
 
 ## 📋 Requirements
 
-- A browser with WebGL2 + WebRTC support (Chrome/Edge recommended)
+- A browser with WebGL2 + WebRTC support (Chrome or Edge recommended)
 - A webcam
-- Reasonably modern GPU for smooth 60fps bloom rendering
+- A reasonably modern GPU for smooth 60fps bloom rendering
+
+## 🗺️ Roadmap
+
+- [ ] Additional gestures (swipe, spread) for extra interactions
+- [ ] Configurable color themes for the orb
+- [ ] Touch/mouse fallback controls for devices without a camera
+
+## 🤝 Contributing
+
+Issues and pull requests are welcome — if you have ideas for new gestures, visual layers, or performance improvements, feel free to open one.
 
 ## 📄 License
 
-MIT
+Released under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+Made with 🤍 by [**esvius**](https://github.com/esvius)
+
+</div>
