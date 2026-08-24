@@ -62,6 +62,6 @@ This project can be distributed under the **MIT License**.
 
 ---
 
-\<p align="center">
+<p align="center">
 Built with Three.js, MediaPipe, and WebGL.
-\</p>
+</p>
