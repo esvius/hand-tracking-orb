@@ -9,7 +9,7 @@ Built with **Three.js** and **MediaPipe Hand Landmarker**, running entirely in t
 [![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat&logo=three.js&logoColor=white)](https://threejs.org/)
 [![MediaPipe](https://img.shields.io/badge/MediaPipe-Hand%20Landmarker-4285F4?style=flat&logo=google&logoColor=white)](https://developers.google.com/mediapipe)
 [![WebGL](https://img.shields.io/badge/WebGL2-990000?style=flat&logo=webgl&logoColor=white)](https://www.khronos.org/webgl/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#-license)
+[![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](#-license)
 
 ![Hand Tracking Core Demo](./assets/preview.gif)
 
@@ -87,11 +87,11 @@ Then open `http://localhost:3000`, grant camera permission, and start moving you
 
 ## 🤝 Contributing
 
-Issues and pull requests are welcome — if you have ideas for new gestures, visual layers, or performance improvements, feel free to open one.
+This is a personal, closed-source project — external contributions and pull requests are not currently accepted.
 
 ## 📄 License
 
-Released under the [MIT License](LICENSE).
+**All Rights Reserved.** This repository is source-available for viewing only — no permission is granted to use, copy, modify, or distribute this code without explicit written consent from the author. See [LICENSE](LICENSE) for details.
 
 ---
 
