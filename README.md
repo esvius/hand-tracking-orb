@@ -20,7 +20,7 @@ Built with **Three.js** and **MediaPipe Hand Landmarker**, running entirely in t
 
 ---
 
-## Overview
+## 📕 Overview
 
 **Hand Tracking Core** turns your webcam into a controller. A glowing, multi-layered orb — orbiting electron rings, nested icosahedron wireframes, a procedural point-cloud network shell, and a bloom-lit core — responds live to your hand gestures, tracked entirely client-side with zero backend and zero installs.
 
