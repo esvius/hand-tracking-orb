@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌌 Hand Tracking Core
+# 🪐 Hand Tracking Core
 
 **A real-time, gesture-controlled 3D orb rendered in WebGL.No mouse, no keyboard, just your hands.**
 
