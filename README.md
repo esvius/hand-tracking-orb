@@ -2,7 +2,7 @@
 
 # 🪐 Hand Tracking Core
 
-**A real-time, gesture-controlled 3D orb rendered in WebGL.No mouse, no keyboard, just your hands.**
+**A real-time, gesture-controlled 3D orb rendered in WebGL. No mouse, no keyboard, just your hands.**
 
 Built with **Three.js** and **MediaPipe Hand Landmarker**, running entirely in the browser.
 
