@@ -11,7 +11,7 @@ Built with **Three.js** and **MediaPipe Hand Landmarker**, running entirely in t
 [![WebGL](https://img.shields.io/badge/WebGL2-990000?style=flat&logo=webgl&logoColor=white)](https://www.khronos.org/webgl/)
 [![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](#-license)
 
-(./assets/preview.gif)
+![alt](./assets/preview.gif)
 
 
 [![Live Demo](https://img.shields.io/badge/🟢_Live-esvius.github.io-black?style=for-the-badge)](https://esvius.github.io/hand-tracking-orb/)
